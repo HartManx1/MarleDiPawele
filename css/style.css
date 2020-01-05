@@ -1,0 +1,31 @@
+* { box-sizing: border-box; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body { margin: 20px 120px 0; font-family: "Ibarra Real Nova", serif; background-color: #fff; }
+
+nav { border-bottom: 2px solid grey; }
+
+nav ul { list-style: none; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; float: right; font-size: 30px; }
+
+nav a { text-decoration: none; color: grey; }
+
+li { padding: 10px; }
+
+ul { margin-top: 55px; }
+
+span { position: absolute; padding-top: 55px; padding-left: 15px; font-size: 40px; }
+
+.space_img { padding: 50px; padding-top: 55px; }
+
+h1 { font-family: "Ibarra Real Nova", serif; }
+
+.about_me { text-align: center; border-bottom: 2px solid grey; }
+
+p { font-size: 30px; }
+
+.swipe_width { float: left; }
+
+.cards { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; border-bottom: 2px solid grey; }
+
+.reservation_btn { float: right; background: white; border: 2px solid grey; padding: 5px; font-size: 13px; }
