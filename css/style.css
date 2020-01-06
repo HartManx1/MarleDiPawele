@@ -18,11 +18,23 @@ span { position: absolute; padding-top: 55px; padding-left: 15px; font-size: 40p
 
 .space_img { padding: 50px; padding-top: 55px; }
 
-h1 { font-family: "Ibarra Real Nova", serif; }
+h1 { font-family: 'Cormorant', serif; padding-right: 70px; line-height: 1; color: black; font-size: 3.5rem; font-weight: 900; text-transform: uppercase; }
 
-.about_me { text-align: center; border-bottom: 2px solid grey; }
+/*h1 {
+  //background: url("https://ctl.s6img.com/society6/img/UPhlTJKYaDcRvNzI5EnhpIH5U40/w_700/leggings/swatch/~artwork,fw_7500,fh_9000,iw_7500,ih_9000/s6-original-art-uploads/society6/uploads/misc/f5d1ebffb22f46b49239dc25bec8d87a/~~/polka-dots-dalmatian-spots-leggings.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}*/
+.about_me { font-family: 'Cormorant', serif; text-align: justify; border-bottom: 2px solid grey; width: 45vw; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin: auto; }
 
 p { font-size: 30px; }
+
+.swiper-container { width: 100%; padding-top: 50px; padding-bottom: 50px; }
+
+.swiper-slide { background-position: center; background-size: cover; width: 300px; height: 300px; }
 
 .swipe_width { float: left; }
 
