@@ -1,5 +1,3 @@
-# Marle Di Pawele
+# marledipawele
 
-Link to the Page: https://hartmanx1.github.io/MarleDiPawele/
-
-Link to the Page: https://hartmanx1.github.io/MarleDiPawele/
+link to the page: https://inspirer10.github.io/marledipawele/

@@ -1,19 +1,17 @@
 var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
+    spaceBetween: 30,
+    effect: 'fade',
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
     loop: true,
-    speed: 1650,
-    coverflowEffect: {
-        rotate: 35,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: false,
+    speed: 1400,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
     },
     autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
     },
 });
