@@ -1,34 +1,120 @@
-:root { --back-bg-color: white; }
+:root {
+  --back-bg-color: white;
+}
 
-.card { position: relative; width: 300px; height: 450px; margin: 50px; display: inline-block; }
+.card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  margin: 50px;
+  display: inline-block;
+}
 
-.card .content { overflow: hidden; height: 100%; border: 2px solid grey; }
+.cards {
+  display: flex;
+  justify-content: center;
+}
 
-.card .front .image img { display: block; width: 100%; }
+.reservation_btn {
+  float: right;
+  background: white;
+  border: 2px solid grey;
+  padding: 5px;
+  font-size: 13px;
+  outline: 0;
+}
 
-.card .front .title { position: absolute; bottom: 0; left: 0; right: 0; text-align: right; padding: 40px 20px 20px; font-size: 2rem; border-radius: 20px; }
+.reservation_btn:hover {
+  background: black;
+  border: 2px solid grey;
+  color: white;
+}
 
-.card .front .author { font-size: 0.8rem; opacity: 0.6; }
+.card .content {
+  overflow: hidden;
+  height: 100%;
+  border: 2px solid grey;
+}
+
+.card .front .image img {
+  display: block;
+  width: 100%;
+}
+
+.card .front .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  padding: 40px 20px 20px;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+
+.card .front .author {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
 
 /* ======================= */
-.card .front, .card .back { overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; right: 0; backface-visibility: hidden; transition: transform 1200ms; }
+.card .front,
+.card .back {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transition: transform 1200ms;
+}
 
-.card .back .content { background-color: var(--back-bg-color); text-align: center; }
+.card .back .content {
+  background-color: var(--back-bg-color);
+  text-align: center;
+}
 
-.card .back .title { font-size: 2rem; margin-top: 20%; font-weight: 700; text-transform: uppercase; }
+.card .back .title {
+  font-size: 2rem;
+  margin-top: 20%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-.card .back .sub-title { font-size: 0.8rem; letter-spacing: 1px; }
+.card .back .sub-title {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
 
-.card .back .info ul { list-style: none; text-align: left; margin: 30px 20px; }
+.card .back .info ul {
+  list-style: none;
+  text-align: left;
+  margin: 30px 20px;
+}
 
-.card .back .info ul li { margin: 10px 0; }
+.card .back .info ul li {
+  margin: 10px 0;
+}
 
-.card .back .info ul li i { margin-right: 10px; }
+.card .back .info ul li i {
+  margin-right: 10px;
+}
 
-.card .front { transform: perspective(900px) rotateY(0deg); }
+.card .front {
+  transform: perspective(900px) rotateY(0deg);
+}
 
-.card .back { transform: perspective(900px) rotateY(180deg); }
+.card .back {
+  transform: perspective(900px) rotateY(180deg);
+}
 
-.card:hover .front { transform: perspective(900px) rotateY(-180deg); }
+.card:hover .front {
+  transform: perspective(900px) rotateY(-180deg);
+}
 
-.card:hover .back { transform: perspective(900px) rotateY(0deg); }
+.card:hover .back {
+  transform: perspective(900px) rotateY(0deg);
+}
+
+/*# sourceMappingURL=card.css.map */

@@ -23,12 +23,16 @@ body {
 }
 
 #about h1 {
-    font-family: "Ibarra Real Nova", serif;
     display: block;
     text-align: center;
     font-size: 50px;
     margin: 40px auto;
     font-weight: 400;
+}
+
+.gallery {
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
 }
 
 .about_me {
@@ -44,7 +48,7 @@ body {
 
 .swiper-container {
     width: 100%;
-    height: 70%;
+    height: 75%;
     padding: 80px 0 50px;
 }
 
@@ -120,26 +124,7 @@ nav p {
     font-size: 35px;
 }
 
-.cards {
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid grey;
-}
 
-.reservation_btn {
-    float: right;
-    background: white;
-    border: 2px solid grey;
-    padding: 5px;
-    font-size: 13px;
-    outline: 0;
-}
-
-.reservation_btn:hover {
-    background: black;
-    border: 2px solid grey;
-    color: white;
-}
 
 //  KONTAKT I MAPA - HUBERT
 
@@ -620,7 +605,7 @@ div.arrow {
 .contact {
     display: -ms-flexbox;
     display: flex;
-    height: calc(100vh - 64px);
+    height: 64vh;
     color: #fff;
 }
 
@@ -649,7 +634,7 @@ div.arrow {
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: 100%;
-    height: calc(100vh - 64px);
+    height: 64vh;
     padding: 0 30px;
     background-color: rgba(0, 0, 0, 0.8);
 }

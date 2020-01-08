@@ -10,9 +10,29 @@
 	display: inline-block;
 }
 
+.cards {
+    display: flex;
+    justify-content: center;
+    //border-bottom: 2px solid grey;
+}
+
+.reservation_btn {
+    float: right;
+    background: white;
+    border: 2px solid grey;
+    padding: 5px;
+    font-size: 13px;
+    outline: 0;
+}
+
+.reservation_btn:hover {
+    background: black;
+    border: 2px solid grey;
+    color: white;
+}
+
 .card .content {
 	overflow: hidden;
-
 	height: 100%;
 	border: 2px solid grey;
 }
