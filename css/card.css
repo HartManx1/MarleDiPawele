@@ -117,4 +117,8 @@
   transform: perspective(900px) rotateY(0deg);
 }
 
+.card .front .font_title {
+  font-size: 23px;
+}
+
 /*# sourceMappingURL=card.css.map */
