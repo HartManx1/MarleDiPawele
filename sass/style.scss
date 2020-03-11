@@ -16,20 +16,24 @@ body {
     padding: 0;
 }
 
+::selection {
+    color: white;
+    background: rgba(167, 115, 48, 0.726);
+    //background: goldenrod;
+}
+
 html,
 body {
     position: relative;
     height: 100%;
 }
 
-
-    header {
-        background-image: url(../images/home_img1.png);
-        padding-bottom: 73vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
+.bg_img {
+    background-image: url(../images/home_img1.png);
+    padding-bottom: 73vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .active {
     border: 2px solid black;
@@ -94,7 +98,6 @@ nav .down li {
     color: white;
 }
 
-
 .about h1,
 #about h1 {
     font-family: "Book Antiqua";
@@ -146,10 +149,19 @@ nav .down li {
 }
 
 #about .yesteryear {
-    font-family: 'Yesteryear', cursive;
+    font-family: 'Yesteryear', cursive !important;
     font-size: 33px;
     letter-spacing: 1.67px;
     padding: 0;
+    font-weight: normal !important;
+}
+
+.about_homepage p {
+    font-weight: normal !important;
+    font-family: "lato" !important;
+    text-align: center;
+    //word-spacing: 7px;
+    //letter-spacing: 1px;
 }
 
 .about_homepage h3 {
@@ -167,14 +179,6 @@ nav .down li {
     font-weight: bold;
     width: 60vw;
     margin: 0 auto;
-}
-
-.scissors {
-    background-image: url(../images/scissors_img.png);
-    background-repeat: no-repeat;
-    padding: 30px;
-    background-position: 25vw 100%;
-    background-position-y: bottom;
 }
 
 #map {
@@ -196,7 +200,8 @@ nav img {
 }
 
 nav {
-    margin: 0px 70px 0 110px;
+    margin: 0 120px;
+    padding-top: 20px;
 }
 
 nav ul {
@@ -207,7 +212,7 @@ nav ul {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 50px 110px 50px 50px;
+    padding: 60px 110px 50px 50px;
 }
 
 nav a {
@@ -240,6 +245,53 @@ nav p {
     width: 26vw;
     flex-direction: column;
     display: flex;
+}
+
+.icon {
+    text-align: center;
+    font-size: 7rem; //110px
+    background-color: #444444;
+    border-radius: 50%;
+    width: 50%;
+    color: white;
+    margin: 45px auto 0;
+}
+
+.icons {
+    text-align: right;
+}
+
+.icons i {
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px 15px 0;
+    width: 55px;
+    text-align: center;
+}
+
+.icons .fa-facebook-f {
+    margin: 10px 0 0 10px;
+    transition: .6s;
+}
+
+.icons .fa-instagram {
+    transition: .6s;
+}
+
+.icons .fa-facebook-f:hover {
+    background-color: royalblue;
+    color: white;
+    border-color: white;
+    transform: scale(1.15)
+}
+
+.icons .fa-instagram:hover {
+    color: rgb(164, 31, 226);
+    background: white;
+    border-color: rgb(164, 31, 226);
+    transform: scale(1.15);
 }
 
 .space_img {
@@ -441,6 +493,12 @@ nav p {
 @media (max-width: 1024px) {
     .about-us div.text p {
         margin: 30px 50px;
+    }
+}
+
+@media (max-width: 940px) {
+    .cards {
+        margin: 10px;
     }
 }
 
@@ -775,9 +833,7 @@ div.arrow {
 
 .contact .information .wrap {
     position: absolute;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -791,21 +847,20 @@ div.arrow {
     text-align: center;
     text-transform: uppercase;
     font-size: 28px;
-    padding: 80px 20px 20px;
+    padding: 40px 20px 20px;
     color: white;
     letter-spacing: 2px;
 }
 
 .contact .information .info {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-positive: 1;
     flex-grow: 1;
     padding: 10px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .contact .information .info .contact-icon {
-    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
     text-align: center;
     font-size: 30px;
@@ -813,7 +868,6 @@ div.arrow {
 }
 
 .contact .information .info .text {
-    -ms-flex-positive: 1;
     flex-grow: 1;
     font-size: 16px;
 }
