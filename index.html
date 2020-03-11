@@ -5,15 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="unikalny opis podstrony">
+    <meta name="Keywords" content="Gdańsk, psi fryzjer, Marle di Pawele ">
     <title>Marle Di Pawele</title>
     <link rel="shortcut icon" href="../images/LOGO.png">
 
     <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,600,700&display=swap" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css?family=Yesteryear&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/card_home.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -21,8 +23,8 @@
     <header>
         <nav>
             <div>
-                <a href="#home">
-                    <img src="./images/LOGO.png" alt="Italian Trulli" />
+                <a href="../index.html" target="_self">
+                    <img src="./images/logo.jpg" alt="LOGO" />
                 </a>
 
                 <div class="logo">
@@ -32,11 +34,17 @@
 
 
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="oferta/index.html">OFERTA</a></li>
-                    <li><a href="cennik/index.html">CENNIK</a></li>
+                    <li class="active"><a href="#">HOME</a></li>
+                    <!-- <li><a href="../oferta/index.html">OFERTA</a></li> -->
+                    <li class="show">
+                        <a href="cennik/index.html">CENNIK</a>
+                        <ul class="down">
+                            <li><a href="../cennik/rasy.html">WG RAS</a></li>
+                            <li><a href="../cennik/uslugi.html">WG USŁUG</a></li>
+                        </ul>
+                    </li>
                     <li><a href="galeria/index.html">GALERIA</a></li>
-                    <li><a href="#contact">KONTAKT</a></li>
+                    <li><a href="kontakt/index.html">KONTAKT</a></li>
                 </ul>
             </div>
         </nav>
@@ -45,21 +53,19 @@
 
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(./images/7.png)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/test.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/jd.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/5.png)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/test2.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/jd.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(./images/6.png)"></div>
+            <div class="swiper-slide" loading="eager" style="background-image:url(./images/test.jpg)"></div>
         </div>
         <div class="swiper-pagination swiper-pagination-white"></div>
     </div>
 
 
     <section id="about">
-        <div class="about_me">
-            <h1>O MNIE</h1>
+        <div class="about_homepage">
+            <div class="scissors">
+                <h3>WITAJ W NASZYM ŚWIECIE !</h3>
+                <p class="yesteryear">Czuj sie jak u siebie w domu</p>
+            </div>
+            <h3>MOŻE COŚ O MNIE</h3>
             <p>
                 Kochani znajomi, goście, przyjaciele, klienci czy nieznajomi. To co robię, nie robię dla Was a dla
                 Waszych pupili ku Waszej uciesze. Zapraszam każdego pieska, każdy zas uguje na to by było miło. Nie
@@ -70,32 +76,41 @@
                 a Ty się oderwiesz od rutyny i pogadasz z kimś kto rzucił korporacje dla strzyżenia piesełów. Przychodzę
                 jak wstanę a kończę prace jak zasnę. Przedstawiam Wam jeszcze na koniec mojego przyjaciela i
                 najukochańszego diabła wcielonego jakiego
-                znam, przyjaciela od którego to się wszystko zaczęło - Marley 🐶. </p>
+                znam, przyjaciela od którego to się wszystko zaczęło - Marley. </p>
+
+            <h3>CO MOGE WAM ZAOFEROWAĆ</h3>
+            <p>STRZYŻENIE,</p>
+            <p>TRYMOWANIE,</p>
+            <p>CZESANIE,</p>
+            <p>KĄPIEL PIELĘGNACYJNA Z WYCZESYWANIEM,</p>
+            <p>PUPPY INTRO,</p>
+            <p>PIELĘGNACJA KOTA,</p>
+            <p>KĄPIEL LECZNICZA,</p>
+            <p>SKRACANIE PAZURKÓW,</p>
+            <p>OPIEKA I KONSULTACJE WETERYNARAZY ANIMAL GARDEN,</p>
         </div>
     </section>
-
 
     <section class="cards">
         <div class="card">
             <div class="front">
                 <div class="content">
                     <div class="image">
-                        <img src="images/dog1.jpg" alt="dog" />
-                        <!--<img src="images/salonik.jpg" alt="dog" /> -->
+                        <img src="images/salonik.png" alt="dog" />
                     </div>
                     <div class="title">
                         SALONIK
-                        <div class="author">Marle Di Pawele</div>
+                        <div class="author">Dowiedz się więcej</div>
                     </div>
                 </div>
             </div>
             <div class="back">
                 <div class="content">
                     <div class="title">
-                        STRZYŻENIE PSA
+                        SALONIK
                     </div>
                     <div class="sub-title">
-                        Marle Di Pawele
+                        Dowiedz się więcej
                     </div>
                     <div class="info">
                         <ul>
@@ -117,21 +132,21 @@
             <div class="front">
                 <div class="content">
                     <div class="image">
-                        <img src="images/cat.jpg" alt="cat" />
+                        <img src="images/regulamin.png" alt="cat" />
                     </div>
                     <div class="title">
-                        CZĘSTE PYTANIA
-                        <div class="author">Marle Di Pawele</div>
+                        REGULAMIN
+                        <div class="author">Dowiedz się więcej</div>
                     </div>
                 </div>
             </div>
             <div class="back">
                 <div class="content">
                     <div class="title">
-                        WYCZESYWANIE PSA / KOTA
+                        REGULAMIN
                     </div>
                     <div class="sub-title">
-                        Marle Di Pawele
+                        Dowiedz się więcej
                     </div>
                     <div class="info">
                         <ul>
@@ -152,21 +167,21 @@
             <div class="front">
                 <div class="content">
                     <div class="image">
-                        <img src="images/dog.jpg" alt="dog" />
+                        <img src="images/hotelik.png" alt="dog" />
                     </div>
                     <div class="title">
                         HOTELIK
-                        <div class="author">Marle Di Pawele</div>
+                        <div class="author">Dowiedz się więcej</div>
                     </div>
                 </div>
             </div>
             <div class="back">
                 <div class="content">
                     <div class="title">
-                        STYLIZACJE PSICH FRYZUR
+                        HOTELIK
                     </div>
                     <div class="sub-title">
-                        Marle Di Pawele
+                        Dowiedz się więcej
                     </div>
                     <div class="info">
                         <ul>
@@ -220,7 +235,7 @@
 
 
     <footer>
-        <p>© All rights reserved 2020 <br>site created by xyz</p>
+        <p>Marle di Pawele<br>© All rights reserved 2020</p>
     </footer>
 
 

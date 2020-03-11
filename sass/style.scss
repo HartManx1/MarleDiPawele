@@ -23,24 +23,87 @@ body {
 }
 
 
+    header {
+        background-image: url(../images/home_img1.png);
+        padding-bottom: 73vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+.active {
+    border: 2px solid black;
+    display: inline-table;
+}
+
+.down {
+    flex-direction: column;
+    display: none;
+}
+
+nav .down a,
+nav .down li {
+    font-size: 20px;
+    padding: 3px 1px;
+    margin: 0;
+}
+
+.show:hover .down {
+    display: flex;
+    padding: 0;
+    position: relative;
+    font-size: 25px;
+}
 
 .marg_about {
     margin-bottom: 40px;
 }
 
 .margin_rig_lef {
-    margin-left: 400px;
-    margin-right: 400px;
+    margin: 0 400px;
+}
+
+.marley {
+    height: 40vh;
+    margin-bottom: 10px;
+}
+
+.about_me {
+    font-family: 'lato';
+    text-align: center;
+    padding-bottom: 30px;
+    width: 50vw;
+    margin: auto;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+.about_me a {
+    text-decoration: none;
+    color: black;
+    padding: 3px 0;
+    display: inline-block;
+}
+
+.about_me a:hover {
+    font-weight: bold;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
 }
 
 
-
+.about h1,
 #about h1 {
+    font-family: "Book Antiqua";
     display: block;
     text-align: center;
     font-size: 50px;
-    margin: 40px auto;
-    font-weight: 400;
+    margin: 120px auto 0;
+    font-weight: normal;
+    letter-spacing: 3.33px;
 }
 
 #about h2 {
@@ -49,9 +112,32 @@ body {
     padding-bottom: 20px;
 }
 
+.about p,
 #about p {
     text-align: center;
+    font-size: 16px;
+    padding: 20px;
+}
+
+#about p:nth-of-type(2),
+#about p:nth-of-type(8) {
+    font-family: "Book Antiqua";
     font-size: 20px;
+    font-weight: bold;
+    padding: 80px 0 40px;
+}
+
+.about p:nth-of-type(2) {
+    font-family: 'Yesteryear', cursive;
+    font-size: 35px;
+}
+
+#about p:nth-of-type(8) {
+    padding: 60px 0 30px;
+}
+
+#about p:last-of-type {
+    padding: 50px 0 100px;
 }
 
 .about_border {
@@ -59,31 +145,36 @@ body {
     padding: 15px;
 }
 
-.gallery {
-    border-bottom: 2px solid grey;
-    padding-bottom: 20px;
+#about .yesteryear {
+    font-family: 'Yesteryear', cursive;
+    font-size: 33px;
+    letter-spacing: 1.67px;
+    padding: 0;
 }
 
-.about_me {
-    font-family: 'Cormorant', serif;
+.about_homepage h3 {
+    margin: 50px auto 0;
     text-align: center;
-    border-bottom: 2px solid grey;
-    padding-bottom: 30px;
-    width: 70vw;
-    margin: auto;
-    font-size: 18px;
-    letter-spacing: 0.4px;
+    font-size: 23px;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 75%;
-    padding: 80px 0 50px;
+.about_homepage h3:nth-of-type(2) {
+    margin: 60px auto 30px;
 }
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
+#about .about_homepage p {
+    padding: 5px 0;
+    font-weight: bold;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.scissors {
+    background-image: url(../images/scissors_img.png);
+    background-repeat: no-repeat;
+    padding: 30px;
+    background-position: 25vw 100%;
+    background-position-y: bottom;
 }
 
 #map {
@@ -105,7 +196,7 @@ nav img {
 }
 
 nav {
-    margin: 50px 70px 0 110px;
+    margin: 0px 70px 0 110px;
 }
 
 nav ul {
@@ -123,7 +214,7 @@ nav a {
     text-decoration: none;
     color: black;
     letter-spacing: -1px;
-    padding: 5px;
+    padding: 2px 5px;
     border: none;
 }
 
@@ -131,9 +222,14 @@ ul a:hover {
     border-bottom: 2px solid black;
 }
 
+.active a:hover {
+    border-bottom: none;
+}
+
 nav li {
-    padding: 10px;
+    padding: 5px;
     font-size: 25px;
+    margin: 0 5px;
 }
 
 nav p {
@@ -153,7 +249,27 @@ nav p {
     font-size: 35px;
 }
 
+.high {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: normal;
+}
 
+.reservation_btn {
+    float: right;
+    background: white;
+    border: 2px solid grey;
+    padding: 5px;
+    font-size: 13px;
+    outline: 0;
+}
+
+.reservation_btn:hover {
+    background: black;
+    border: 2px solid grey;
+    color: white;
+}
 
 //  KONTAKT I MAPA - HUBERT
 
@@ -559,7 +675,12 @@ div.arrow {
 
 .gallery {
     max-width: 1280px;
-    margin: 0 auto 80px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+}
+
+.plugin {
+    margin: 60px 0;
 }
 
 .gallery h1 {
@@ -634,21 +755,19 @@ div.arrow {
 .contact {
     display: -ms-flexbox;
     display: flex;
-    height: 64vh;
+    height: 65vh;
     color: #fff;
 }
 
 .contact .information {
+    font-family: "Lato";
     position: relative;
     top: 0;
     left: 0;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-positive: 1;
     flex-grow: 1;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/salonik.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -663,7 +782,7 @@ div.arrow {
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: 100%;
-    height: 64vh;
+    height: 65vh;
     padding: 0 30px;
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -701,13 +820,14 @@ div.arrow {
 
 .contact .information .info .text p.title {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .text p {
     font-size: 18px;
+    font-weight: 100;
 }
 
 .contact .map {
@@ -724,7 +844,7 @@ div.arrow {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 64px);
+    height: 65vh;
 }
 
 @media (max-width: 1024px) {
@@ -860,6 +980,12 @@ div.arrow {
 footer {
     background-color: rgba(13, 13, 13, 0.9);
     text-align: center;
+}
+
+.footer-fix {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 footer p {

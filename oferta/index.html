@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,600,700&display=swap" rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Handlee&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/swiper.min.css" />
     <link rel="stylesheet" href="../css/card.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -21,8 +21,8 @@
     <header>
         <nav>
             <div>
-                <a href="#home" target="_blank">
-                    <img src="../images/LOGO.png" alt="Italian Trulli" />
+                <a href="../index.html" target="_self">
+                    <img src="../images/logo.jpg" alt="LOGO" />
                 </a>
 
                 <div class="logo">
@@ -34,30 +34,32 @@
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
                     <li><a href="#">OFERTA</a></li>
-                    <li><a href="../cennik/index.html">CENNIK</a></li>
+                    <li class="show">
+                        <a href="../cennik/index.html">CENNIK</a>
+                        <ul class="down">
+                            <li><a href="../cennik/rasy.html">WG RAS</a></li>
+                            <li><a href="../cennik/uslugi.html">WG USŁUG</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../galeria/index.html">GALERIA</a></li>
-                    <li><a href="#contact">KONTAKT</a></li>
+                    <li><a href="../kontakt/index.html">KONTAKT</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
+
     <section id="about" class="margin_rig_lef">
         <h1>OFERTA</h1>
         <div class="about_border">
             <h2>Wizyta w saloniku rozpoczyna się od Puppy Intro:</h2>
-            <p>Poznawanie saloniku wraz z obsikiwaniem
-                zapoznanie się z odgłosami maszynki, suszarki, nożyczek i skrzypiących drzwiczek
-                kąpiel bezpieczna ze swobodnym bieganiem po łazience i chlapaniem gdzie
-                popadnie.
-                suszenie ciepłym wiatrem
-                czesanie i pielęgnacja okolic oczu, uszu, pupy i łapek
-                obcinanie pazurków</p>
+            <p>Poznawanie saloniku wraz z obsikiwaniem zapoznanie się z odgłosami maszynki, suszarki, nożyczek i skrzypiących drzwiczek kąpiel bezpieczna ze swobodnym bieganiem po łazience i chlapaniem gdzie popadnie. suszenie ciepłym wiatrem czesanie i
+                pielęgnacja okolic oczu, uszu, pupy i łapek obcinanie pazurków</p>
         </div>
     </section>
 
 
-    <section class="cards">
+    <section class="cards cards-fix">
         <div class="card">
             <div class="front">
                 <div class="content">
@@ -81,12 +83,9 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą
-                                uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści
-                                mówi wiele o stanie zdrowia zwierzęcia, a
+                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści mówi wiele o stanie zdrowia zwierzęcia, a
                                 także pełni ważne funkcje dla całego organizmu.
                             </li>
-                            <li><i class="fa fa-map-marker-alt"></i> CENA: 50zł</li>
                             <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
                         </ul>
                     </div>
@@ -117,11 +116,8 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <i class="fa fa-user"></i> Czesanie kota pomaga nie tylko zmniejszyć ilość
-                                wszechobecnych włosów, ale także przyczynia się do poprawy kondycji sierści. Kiedy
-                                pozbywasz się obumarłych włosów, na ich miejsce wyrastają nowe.
+                                <i class="fa fa-user"></i> Czesanie kota pomaga nie tylko zmniejszyć ilość wszechobecnych włosów, ale także przyczynia się do poprawy kondycji sierści. Kiedy pozbywasz się obumarłych włosów, na ich miejsce wyrastają nowe.
                             </li>
-                            <li><i class="fa fa-map-marker-alt"></i> CENA: 30ZŁ</li>
                             <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
                         </ul>
                     </div>
@@ -152,11 +148,8 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <i class="fa fa-user"></i> Kiedy pojawiały się pierwsze salony dla psów, zazwyczaj
-                                oferowały mały wachlarz możliwych fryzur. Jak z morza pomysłów wybrać odpowiedni dla
-                                naszego pupila?
+                                <i class="fa fa-user"></i> Kiedy pojawiały się pierwsze salony dla psów, zazwyczaj oferowały mały wachlarz możliwych fryzur. Jak z morza pomysłów wybrać odpowiedni dla naszego pupila?
                             </li>
-                            <li><i class="fa fa-map-marker-alt"></i> CENA: 60zł</li>
                             <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
                         </ul>
                     </div>
@@ -165,7 +158,7 @@
         </div>
     </section>
 
-    <section class="cards">
+    <section class="cards cards-fix">
         <div class="card">
             <div class="front">
                 <div class="content">
@@ -189,12 +182,9 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą
-                                uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści
-                                mówi wiele o stanie zdrowia zwierzęcia, a
+                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści mówi wiele o stanie zdrowia zwierzęcia, a
                                 także pełni ważne funkcje dla całego organizmu.
                             </li>
-                            <li><i class="fa fa-map-marker-alt"></i> CENA: 50zł</li>
                             <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
                         </ul>
                     </div>
@@ -227,11 +217,8 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <i class="fa fa-user"></i> Kiedy pojawiały się pierwsze salony dla psów, zazwyczaj
-                                oferowały mały wachlarz możliwych fryzur. Jak z morza pomysłów wybrać odpowiedni dla
-                                naszego pupila?
+                                <i class="fa fa-user"></i> Kiedy pojawiały się pierwsze salony dla psów, zazwyczaj oferowały mały wachlarz możliwych fryzur. Jak z morza pomysłów wybrać odpowiedni dla naszego pupila?
                             </li>
-                            <li><i class="fa fa-map-marker-alt"></i> CENA: 60zł</li>
                             <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
                         </ul>
                     </div>
@@ -262,12 +249,9 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą
-                                uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści
-                                mówi wiele o stanie zdrowia zwierzęcia, a
+                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści mówi wiele o stanie zdrowia zwierzęcia, a
                                 także pełni ważne funkcje dla całego organizmu.
                             </li>
-                            <li><i class="fa fa-map-marker-alt"></i> CENA: 50zł</li>
                             <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
                         </ul>
                     </div>
@@ -278,7 +262,7 @@
 
     </section>
 
-    <section class="cards">
+    <section class="cards cards-fix">
 
         <div class="card">
             <div class="front">
@@ -303,15 +287,9 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <i class="fa fa-user"></i> Poznawanie saloniku wraz z obsikiwaniem
-                                zapoznanie się z odgłosami maszynki, suszarki, nożyczek i skrzypiących drzwiczek
-                                kąpiel bezpieczna ze swobodnym bieganiem po łazience i chlapaniem gdzie
-                                popadnie.
-                                suszenie ciepłym wiatrem
-                                czesanie i pielęgnacja okolic oczu, uszu, pupy i łapek
-                                obcinanie pazurków.
+                                <i class="fa fa-user"></i> Poznawanie saloniku wraz z obsikiwaniem zapoznanie się z odgłosami maszynki, suszarki, nożyczek i skrzypiących drzwiczek kąpiel bezpieczna ze swobodnym bieganiem po łazience i chlapaniem gdzie
+                                popadnie. suszenie ciepłym wiatrem czesanie i pielęgnacja okolic oczu, uszu, pupy i łapek obcinanie pazurków.
                             </li>
-                            <li><i class="fa fa-map-marker-alt"></i> CENA: 30ZŁ</li>
                             <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
                         </ul>
                     </div>
@@ -342,12 +320,9 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą
-                                uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści
-                                mówi wiele o stanie zdrowia zwierzęcia, a
+                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści mówi wiele o stanie zdrowia zwierzęcia, a
                                 także pełni ważne funkcje dla całego organizmu.
                             </li>
-                            <li><i class="fa fa-map-marker-alt"></i> CENA: 50zł</li>
                             <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
                         </ul>
                     </div>
@@ -358,11 +333,16 @@
 
     <section id="about" class="marg_about margin_rig_lef">
         <div class="about_border">
-            <p>     Mam również przyjemność pracy w sąsiedztwie z wybitnymi
-                weterynarzami z dziedziny chorób skórnych i neurologii, którzy zawsze z chęcią służą
-                pomocą czy konsultacją, gdy zauważę coś niepokojącego.</p>
+            <p> Mam również przyjemność pracy w sąsiedztwie z wybitnymi weterynarzami z dziedziny chorób skórnych i neurologii, którzy zawsze z chęcią służą pomocą czy konsultacją, gdy zauważę coś niepokojącego.</p>
         </div>
     </section>
+
+
+
+    <footer>
+        <p>Marle di Pawele<br>© All rights reserved 2020</p>
+    </footer>
+
 
     <script src="../js/swiper.min.js"></script>
     <script src="../js/slider.js"></script>

@@ -20,8 +20,8 @@
     <header>
         <nav>
             <div>
-                <a href="#home" target="_blank">
-                    <img src="../images/LOGO.png" alt="Italian Trulli" />
+                <a href="../index.html" target="_self">
+                    <img src="../images/logo.jpg" alt="LOGO" />
                 </a>
 
                 <div class="logo">
@@ -32,10 +32,16 @@
 
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../oferta/index.html">OFERTA</a></li>
-                    <li><a href="../cennik/index.html">CENNIK</a></li>
-                    <li><a href="#">GALERIA</a></li>
-                    <li><a href="#contact">KONTAKT</a></li>
+                    <!-- <li><a href="../oferta/index.html">OFERTA</a></li> -->
+                    <li class="show">
+                        <a href="../cennik/index.html">CENNIK</a>
+                        <ul class="down">
+                            <li><a href="../cennik/rasy.html">WG RAS</a></li>
+                            <li><a href="../cennik/uslugi.html">WG USŁUG</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#">GALERIA</a></li>
+                    <li><a href="../kontakt/index.html">KONTAKT</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,11 +49,14 @@
 
     <section id="about">
         <h1 class="gallery">GALERIA</h1>
-</section>
+        <div class="elfsight-app-cfd284c4-c7a7-4d32-ad05-0c3450812878 plugin"></div>
+    </section>
+
+    <footer>
+        <p>Marle di Pawele<br>© All rights reserved 2020</p>
+    </footer>
 
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-cfd284c4-c7a7-4d32-ad05-0c3450812878"></div>
-
     <script src="../js/swiper.min.js"></script>
     <script src="../js/slider.js"></script>
 </body>
