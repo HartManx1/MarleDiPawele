@@ -44,12 +44,11 @@
   text-decoration: none;
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
-  transition: 1s ease;
+  transition: .7s ease;
 }
 
 .modal .close:hover {
   color: rgba(167, 115, 48, 0.726);
-  transform: rotate(90deg);
 }
 
 .modal header {
@@ -92,14 +91,29 @@ a {
   color: black;
 }
 
+.show-modal {
+  margin: 40px;
+}
+
 @media (max-width: 700px) {
   .modal {
     background: #fff;
     width: 90vw;
-    padding: 15px;
+    padding: 10px;
+    font-size: 19px;
+  }
+  .modal .content {
+    padding: 10px 20px;
+  }
+  .price {
+    padding: 10px 5px 0;
+  }
+  .box {
+    width: 260px;
+    min-height: 250px;
+    border: 3px solid #646464;
     font-size: 20px;
-    text-align: center;
-    position: absolute;
+    margin: 0 auto;
   }
 }
 
