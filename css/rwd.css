@@ -1,0 +1,97 @@
+@media (max-width: 1322px) {
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    position: static;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10%;
+  }
+  .active {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .bg_img {
+    background-image: none;
+    padding-bottom: 0vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .img_mobile {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+  .small_p {
+    display: inline-block;
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+  .big_p {
+    font-size: 25px;
+    margin-top: 20px;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #show_nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1322px) {
+  .img_mobile {
+    display: none;
+  }
+  .big_p {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 47vw;
+  }
+  .line_1:before {
+    width: 50px;
+  }
+  .line_1::after {
+    width: 50px;
+  }
+  .line_2:before {
+    width: 10px;
+  }
+  .line_2::after {
+    width: 10px;
+  }
+  .about_homepage h3 {
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 21px;
+  }
+  #about .about_homepage p {
+    width: 90vw;
+  }
+  .about_homepage h3:nth-of-type(2) {
+    margin: 30px auto 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 100vw;
+  }
+  nav img {
+    display: flex;
+    justify-content: center;
+    float: none;
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=rwd.css.map */
