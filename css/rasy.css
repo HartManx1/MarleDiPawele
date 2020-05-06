@@ -1,5 +1,23 @@
-a { position: relative; display: block; }
+a {
+  position: relative;
+  display: block;
+}
 
-a .pop { display: inline; position: absolute; visibility: hidden; background-color: #FFFFFF; border: solid 2px #000000; padding: 5px; margin: 0 0 0 10px; color: #000000; text-align: left; font-weight: normal; }
+a .pop {
+  display: inline;
+  position: absolute;
+  visibility: hidden;
+  background-color: #FFFFFF;
+  border: solid 2px #000000;
+  padding: 5px;
+  margin: 0 0 0 10px;
+  color: #000000;
+  text-align: left;
+  font-weight: normal;
+}
 
-a:hover .pop { visibility: visible; }
+a:hover .pop {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=rasy.css.map */

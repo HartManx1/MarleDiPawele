@@ -1,27 +1,101 @@
-:root { --back-bg-color: white; }
+:root {
+  --back-bg-color: white;
+}
 
-.cards { display: flex; justify-content: space-evenly; flex-wrap: wrap; margin: 10px 300px; padding-bottom: 5vw; }
+.typed-cursor {
+  display: none;
+}
 
-.cards-fix { flex-direction: column; margin: 0 auto; }
+p.box1 {
+  margin-bottom: 20px;
+}
 
-.card { position: relative; width: 300px; height: 300px; margin: 50px auto; display: inline-block; }
+.box h4 {
+  margin-top: 20px;
+}
 
-.card:hover { height: 400px; transition: 1.2s; }
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px 300px;
+  padding-bottom: 5vw;
+}
 
-.card .content { overflow: hidden; height: 100%; border: 2px solid grey; }
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  display: inline-block;
+  transition: 1.2s;
+}
 
-.box { margin: 40px; width: 270px; border: 2px solid #646464; color: #646464; font-weight: bold; min-height: 270px; text-align: center; vertical-align: top; display: flex; justify-content: center; align-items: center; }
+.cards-fix .card:hover {
+  height: 400px;
+}
 
-.front a { text-decoration: none; color: black; }
+.card .content {
+  overflow: hidden;
+  height: 100%;
+  border: 2px solid grey;
+}
 
-.card .front .image img { width: 70%; display: flex; margin: 0 auto; }
+.box {
+  margin: 40px;
+  width: 270px;
+  border: 2px solid #646464;
+  color: #646464;
+  color: black;
+  font-weight: bold;
+  min-height: 270px;
+  text-align: center;
+  vertical-align: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-.card .front .title { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%); padding: 5px 20px; font-size: 1.7rem; }
+.front a {
+  text-decoration: none;
+  color: black;
+}
 
-.card .front .author { font-size: 0.8rem; opacity: 0.6; }
+.card .front .image img {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.card .front .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%);
+  padding: 5px 20px;
+  font-size: 1.7rem;
+}
+
+.card .front .author {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
 
 /* ======================= */
-.card .front, .card .back { overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; right: 0; backface-visibility: hidden; transition: transform 1200ms; }
+.card .front,
+.card .back {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transition: transform 1200ms;
+}
 
 /*
 .card .back {
@@ -31,28 +105,63 @@
 .card:hover .back {
     display: block;
 }*/
-.card .back .content { background-color: var(--back-bg-color); text-align: center; }
+.card .back .content {
+  background-color: var(--back-bg-color);
+  text-align: center;
+}
 
-.card .back .title { font-size: 2rem; margin-top: 15%; font-weight: 700; text-transform: uppercase; }
+.card .back .title {
+  font-size: 2rem;
+  margin-top: 15%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-.card .back .sub-title { font-size: 0.8rem; letter-spacing: 1px; }
+.card .back .sub-title {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
 
-.info { font-size: 15px; padding: 15px; }
+.info {
+  font-size: 15px;
+  padding: 15px;
+}
 
-.card .front { transform: perspective(900px) rotateY(0deg); }
+.card .front {
+  transform: perspective(900px) rotateY(0deg);
+}
 
-.card .back { transform: perspective(900px) rotateY(180deg); }
+.card .back {
+  transform: perspective(900px) rotateY(180deg);
+}
 
-.card:hover .front { transform: perspective(900px) rotateY(-180deg); }
+.card:hover .front {
+  transform: perspective(900px) rotateY(-180deg);
+}
 
-.card:hover .back { transform: perspective(900px) rotateY(0deg); }
+.card:hover .back {
+  transform: perspective(900px) rotateY(0deg);
+}
 
-.card .front .font_title { font-size: 23px; }
+.card .front .font_title {
+  font-size: 23px;
+}
 
-.card .front .title-primary { text-align: center; }
+.card .front .title-primary {
+  text-align: center;
+}
 
-.fix { width: 460px; height: 370px; }
+.fix {
+  width: 460px;
+  height: 370px;
+}
 
-.fix:hover .front { transform: none; }
+.fix:hover .front {
+  transform: none;
+}
 
-.fix:hover .back { transform: none; }
+.fix:hover .back {
+  transform: none;
+}
+
+/*# sourceMappingURL=card.css.map */

@@ -2,6 +2,18 @@
     --back-bg-color: white;
 }
 
+.typed-cursor {
+    display: none;
+}
+
+p.box1 {
+    margin-bottom: 20px;
+}
+
+.box h4 {
+    margin-top: 20px;
+}
+
 .cards {
     display: flex;
     justify-content: space-evenly;
@@ -10,22 +22,17 @@
     padding-bottom: 5vw;
 }
 
-.cards-fix {
-    flex-direction: column;
-    margin: 0 auto;
-}
-
 .card {
     position: relative;
     width: 300px;
     height: 300px;
     margin: 50px auto;
     display: inline-block;
+    transition: 1.2s;
 }
 
-.card:hover {
+.cards-fix .card:hover {
     height: 400px;
-    transition: 1.2s;
 }
 
 .card .content {
@@ -40,6 +47,7 @@
     width: 270px;
     border: 2px solid rgb(100, 100, 100);
     color: rgb(100, 100, 100);
+    color: black;
     font-weight: bold;
     min-height: 270px;
     text-align: center;
@@ -47,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .front a {

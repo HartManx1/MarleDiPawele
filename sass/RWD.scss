@@ -1,0 +1,19 @@
+@media (max-width: 1322px) {
+
+    nav {
+        margin: 0;
+    }
+
+    nav ul {
+        position: static;
+        padding: 0;
+        flex-direction: column;
+    }
+
+.bg_img {
+    padding-bottom: 0vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+}

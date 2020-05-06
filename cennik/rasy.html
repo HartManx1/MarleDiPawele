@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Marle Di Pawele | CENNIK WG RAS</title>
-
     <link rel="shortcut icon" href="../images/LOGO.png">
+
     <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,600,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yesteryear&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/8cb5ea09ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/swiper.min.css" />
     <link rel="stylesheet" href="../css/card.css" />
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/rasy.css" />
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         <nav>
             <div>
                 <a href="../index.html" target="_self">
-                    <img src="../images/LOGO.png" alt="LOGO" />
+                    <img src="../images/logo.jpg" alt="LOGO" />
                 </a>
 
                 <div class="logo">
@@ -34,9 +35,8 @@
 
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
-                    <!-- <li><a href="../oferta/index.html">OFERTA</a></li> -->
                     <li class="active show">
-                        <a href="#">CENNIK</a>
+                        <a href="index.html">CENNIK</a>
                         <ul class="down">
                             <li><a href="rasy.html">WG RAS</a></li>
                             <li><a href="uslugi.html">WG USŁUG</a></li>
@@ -54,8 +54,7 @@
         <div class="about_me">
 
             <h1>CENNIK WG RAS</h1>
-            <p class="yesteryear">Ceny zaleza od zachowania milusinskiego, stanu siersci i dlugosci wykonanej uslugi.
-            </p>
+            <p class="yesteryear">Ceny zaleza od zachowania milusinskiego, stanu siersci i dlugosci wykonanej uslugi.</p>
 
         </div>
     </section>
@@ -63,77 +62,419 @@
 
     <section class="cards">
 
-        <div class="box pop">
-            <a><span>YORK</span><span class="pop">YORK<br>
-                kąpiel oczyszczająca z pielęgnacją okolic oczu
-                kąpiel nawilżająca/witalizująca
-                suszenie z rozczesywaniem/ usuwaniem kołtunków
-                przycinanie pazurków
-                strzyżenie według wzorca rasy lub na życzenie
-                czyszczenie uszu
-                perfumowanie/odżywianie
-                Cena: 100 zł</span> </a>
+
+        <a href="#modal-one" class="show-modal">
+            <div class="box">YORK</div>
+        </a>
+
+        <a href="#modal-two" class="show-modal">
+            <div class="box">MALTAŃCZYK</div>
+        </a>
+
+        <a href="#modal-three" class="show-modal">
+            <div class="box">MALTAN</div>
+        </a>
+
+        <a href="#modal-four" class="show-modal">
+            <div class="box">SHIH TZU</div>
+        </a>
+
+        <a href="#modal-five" class="show-modal">
+            <div class="box">BOLOŃCZYK</div>
+        </a>
+
+        <a href="#modal-six" class="show-modal">
+            <div class="box">COLTON DE TULEAR</div>
+        </a>
+
+        <a href="#modal-seven" class="show-modal">
+            <div class="box">BICHON FRISE</div>
+        </a>
+
+        <a href="#modal-eight" class="show-modal">
+            <div class="box">SZNAUCER MINIATUROWY I ŚREDNI</div>
+        </a>
+
+        <a href="#modal-nine" class="show-modal">
+            <div class="box">SZNAUCER OLBRZYMI</div>
+        </a>
+
+        <a href="#modal-ten" class="show-modal">
+            <div class="box">WEST</div>
+        </a>
+
+        <a href="#modal-eleven" class="show-modal">
+            <div class="box">TERIER SZKOCKI</div>
+        </a>
+
+        <a href="#modal-twelve" class="show-modal">
+            <div class="box">JACK RUSSEL<br><br>PARSON RUSSEL</div>
+        </a>
+
+        <a href="#modal-thirteen" class="show-modal">
+            <div class="box">LHASO APSO</div>
+        </a>
+
+        <a href="#modal-fourteen" class="show-modal">
+            <div class="box">COCKER SPANIEL ANGIELSKI</div>
+        </a>
+
+        <a href="#modal-fiveteen" class="show-modal">
+            <div class="box">POMERANIAN</div>
+        </a>
+
+        <a href="#modal-sixteen" class="show-modal">
+            <div class="box">PUDEL MINI</div>
+        </a>
+
+        <a href="#modal-seventeen" class="show-modal">
+            <div class="box">CAVALIER KING<br>CHARLES SPANIEL</div>
+        </a>
+
+        <a href="#modal-eighteen" class="show-modal">
+            <div class="box">SPRINGER SPANIEL<br>ANGIELSKI</div>
+        </a>
+
+        <a href="#modal-nineteen" class="show-modal">
+            <div class="box">BULL TERRIER</div>
+        </a>
+
+
+        <div class="overlay" id="modal-overlay">
+            <div class="modal" id="modal-one">
+                <a href="#" class="close">x</a>
+                <header class="pets">YORK</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 100 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-two">
+                <a href="#" class="close">x</a>
+                <header>MALTAŃCZYK</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 110 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-three">
+                <a href="#" class="close">x</a>
+                <header>MALTAN</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 140 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-four">
+                <a href="#" class="close">x</a>
+                <header>SHIH TZU</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 110 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-five">
+                <a href="#" class="close">x</a>
+                <header>BOLTOŃCZYK</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 120 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-six">
+                <a href="#" class="close">x</a>
+                <header>COLTON DE TULEAR</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca/</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 120 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-seven">
+                <a href="#" class="close">x</a>
+                <header>BICHON FRISE</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 140 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-eight">
+                <a href="#" class="close">x</a>
+                <header>SZNAUCER MINIATUROWY I ŚREDNI</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>trymowanie według wzorca rasy</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena ze strzyżeniem: 110 zł</p>
+                        <p class="price">Cena z trymowaniem: 150 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-nine">
+                <a href="#" class="close">x</a>
+                <header>SZNAUCER OLBRZYMI</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>trymowanie według wzorca rasy</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena ze strzyżeniem: 170 zł</p>
+                        <p class="price">Cena z trymowaniem: 220 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-ten">
+                <a href="#" class="close">x</a>
+                <header>WEST</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>trymowanie według wzorca rasy</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena ze strzyżeniem: 110 zł</p>
+                        <p class="price">Cena z trymowaniem: 150 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-eleven">
+                <a href="#" class="close">x</a>
+                <header>TERIER SZKOCKI</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>trymowanie według wzorca rasy</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 200 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-twelve">
+                <a href="#" class="close">x</a>
+                <header>JACK RUSSEL/PARSON RUSSEL</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>trymowanie według wzorca rasy</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 150 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-thirteen">
+                <a href="#" class="close">x</a>
+                <header>LHASO APSO</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 100 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-fourteen">
+                <a href="#" class="close">x</a>
+                <header>COCKER SPANIEL ANGIELSKI</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/wybielająca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>trymowanie według wzorca rasy</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena ze strzyżeniem: 140 zł</p>
+                        <p class="price">Cena z trymowaniem: 180 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-fiveteen">
+                <a href="#" class="close">x</a>
+                <header>POMERANIAN</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca/zwiększająca objętość</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie</li>
+                        <li>odżywianie włosa</li>
+                        <p class="price">Cena: 150 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-sixteen">
+                <a href="#" class="close">x</a>
+                <header>PUDEL MINI</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>strzyżenie według wzorca rasy lub na życzenie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 100 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-seventeen">
+                <a href="#" class="close">x</a>
+                <header>CAVALIER KING CHARLES SPANIEL</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>trymowanie według wzorca rasy</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 120 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-eighteen">
+                <a href="#" class="close">x</a>
+                <header>SPRINGER SPANIEL ANGIELSKI</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>trymowanie według wzorca rasy</li>
+                        <li>czyszczenie uszu</li>
+                        <li>perfumowanie/odżywianie</li>
+                        <p class="price">Cena: 140 zł</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-nineteen">
+                <a href="#" class="close">x</a>
+                <header>BULL TERRIER</header>
+                <div class="content">
+                    <ul>
+                        <li>kąpiel oczyszczająca z pielęgnacją okolic oczu</li>
+                        <li>kąpiel nawilżająca/witalizująca</li>
+                        <li>suszenie z rozczesywaniem/ usuwaniem kołtunków</li>
+                        <li>przycinanie pazurków</li>
+                        <li>trymowanie</li>
+                        <li>czyszczenie uszu</li>
+                        <li>odżywianie włosa</li>
+                        <p class="price">Cena: 150 zł</p>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            MALTAŃCZYK
-        </div>
-        <div class="box">
-            MALTAN
-        </div>
-        <div class="box">
-            SHIH TZU
-        </div>
-        <div class="box">
-            BOLOŃCZYK
-        </div>
-        <div class="box">
-            COLTON DE TULEAR
-        </div>
-        <div class="box">
-            BICHON FRISE
-        </div>
-        <div class="box">
-            SZNAUCER MINIATUROWY I ŚREDNI
-        </div>
-        <div class="box">
-            SZNAUCER OLBRZYMI
-        </div>
-        <div class="box">
-            WEST
-        </div>
-        <div class="box">
-            TERIER SZKOCKI
-        </div>
-        <div class="box">
-            JACK RUSSEL<br><br>PARSON RUSSEL
-        </div>
-        <div class="box">
-            LHASO APSO
-        </div>
-        <div class="box">
-            COCKER SPANIEL ANGIELSKI
-        </div>
-        <div class="box">
-            POMERANIAN
-        </div>
-        <div class="box">
-            PUDEL MINI
-        </div>
-        <div class="box">
-            CAVALIER KING<br>CHARLES SPANIEL
-        </div>
-        <div class="box">
-            SPRINGER SPANIEL<br>ANGIELSKI
-        </div>
-        <div class="box">
-            ?
-        </div>
-        <div class="box">
-            BULL TERRIER
-        </div>
-        <div class="box">
-            ?
-        </div>
+
     </section>
 
 
@@ -141,34 +482,43 @@
     <section class="contact" id="contact">
         <div class="information">
             <div class="wrap">
+                <div class="icons">
+                    <a href="https://www.instagram.com/marledipawele/" target="_blank"> <i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/MarlediPawele/" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                </div>
                 <h1>Skontaktuj się z nami!</h1>
                 <div class="adress info">
-                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="text">
                         <p class="title">Nasz adres</p>
-                        <p><br>ul. Gostyńska 14<br>80-178 Gdańsk</p>
+                        <p><br>UL. GOSTYŃSKA 14<br>80-178 GDAŃSK</p>
                     </div>
                 </div>
+
                 <div class="phone info">
-                    <div class="contact-icon"><i class="fas fa-phone-square"></i></div>
                     <div class="text">
                         <p class="title">Telefon</p>
-                        <p><br>501 679 233</p>
+                        <p><a href="tel:+48 501 679 233">TEL.501 679 233</a></p>
                     </div>
                 </div>
+
                 <div class="open info">
-                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
                     <div class="text">
                         <p class="title">Godziny otwarcia</p>
-                        <p><br>Poniedziałek-Piątek: 8.00 - 17:00 <br>Sobota: 8:00 - 16:00 <br> Niedziela 8:00 - 13:00
-                        </p>
+                        <p><br>KIEDY TYLKO ZECHCESZ ! OTWIERAMY SIĘ DLA CIEBIE :)</p>
                     </div>
                 </div>
+
+                <div class="open info">
+                    <div class="text">
+                        <p class="title">PROBLEM Z DOJAZDEM?</p>
+                        <p><br>W OBRĘBIE 10 KM MOGĘ PODJECHAĆ DO PUPILA I PO WYKONANIU USŁUGI PRZYWIEŹĆ.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div id="map" class="map"></div>
-
     </section>
 
 
@@ -176,10 +526,10 @@
         <p>Marle di Pawele<br>© All rights reserved 2020</p>
     </footer>
 
+    <script src="../js/modal.js"></script>
     <script src="../js/map.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGze9diDY5bK334SePptSJmP9pREP8jkE&callback=initMap">
-        </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGze9diDY5bK334SePptSJmP9pREP8jkE&callback=initMap">
+    </script>
 </body>
 
 </html>

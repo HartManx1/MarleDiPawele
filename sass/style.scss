@@ -28,6 +28,68 @@ body {
     height: 100%;
 }
 
+.line_1,
+.line_2 {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 40px;
+    max-width: 610px;
+    position: relative;
+}
+
+.line_1:before {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.line_1:after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.line_2 {
+    max-width: 1150px;
+    margin-bottom: 40px !important;
+}
+
+.line_2:before {
+    content: "";
+    display: block;
+    width: 310px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.line_2:after {
+    content: "";
+    display: block;
+    width: 310px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
 .bg_img {
     background-image: url(../images/home_img1.png);
     padding-bottom: 73vh;
@@ -150,7 +212,7 @@ nav .down li {
 
 #about .yesteryear {
     font-family: 'Yesteryear', cursive !important;
-    font-size: 33px;
+    font-size: 33px !important;
     letter-spacing: 1.67px;
     padding: 0;
     font-weight: normal !important;
@@ -179,6 +241,19 @@ nav .down li {
     font-weight: bold;
     width: 60vw;
     margin: 0 auto;
+    font-size: 16px;
+}
+
+.introduction {
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    word-spacing: 10px;
+    font-size: 20px !important;
+    font-variant: all-small-caps;
+}
+
+.introduction span {
+    font-variant: normal;
 }
 
 #map {
@@ -811,10 +886,11 @@ div.arrow {
 /*contact*/
 
 .contact {
-    display: -ms-flexbox;
     display: flex;
     height: 65vh;
     color: #fff;
+    position: relative;
+    z-index: -10;
 }
 
 .contact .information {

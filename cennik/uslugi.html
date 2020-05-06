@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Marle Di Pawele | CENNIK WG USŁUG</title>
-
     <link rel="shortcut icon" href="../images/LOGO.png">
+
     <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,600,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yesteryear&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/8cb5ea09ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/swiper.min.css" />
     <link rel="stylesheet" href="../css/card.css" />
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -22,7 +24,7 @@
         <nav>
             <div>
                 <a href="../index.html" target="_self">
-                    <img src="../images/LOGO.png" alt="LOGO" />
+                    <img src="../images/logo.jpg" alt="LOGO" />
                 </a>
 
                 <div class="logo">
@@ -33,9 +35,8 @@
 
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
-                    <!-- <li><a href="../oferta/index.html">OFERTA</a></li> -->
                     <li class="active show">
-                        <a href="#">CENNIK</a>
+                        <a href="index.html">CENNIK</a>
                         <ul class="down">
                             <li><a href="rasy.html">WG RAS</a></li>
                             <li><a href="uslugi.html">WG USŁUG</a></li>
@@ -60,172 +61,160 @@
 
     <section class="cards">
 
-        <div class="box">
-            KĄPIEL OCZYSZCZAJĄCA
-        </div>
+        <a href="#modal-one" class="show-modal">
+            <div class="box">KĄPIEL OCZYSZCZAJĄCA PIELĘGNACYJNA I LECZNICZA</div>
+        </a>
 
-        <div class="box">
-            CZESANIE Z WYCZESYWANIEM KOŁTUNKÓW
-        </div>
+        <a href="#modal-two" class="show-modal">
+            <div class="box">CZESANIE Z WYCZESYWANIEM KOŁTUNKÓW</div>
+        </a>
 
-        <div class="box">
-            TRYMOWANIE
-        </div>
+        <a href="#modal-three" class="show-modal">
+            <div class="box">TRYMOWANIE</div>
+        </a>
 
-        <div class="box">
-            CZYSZCZENIE PIĘLEGNACJE USZU
-        </div>
+        <a href="#modal-four" class="show-modal">
+            <div class="box">CZYSZCZENIE PIĘLEGNACJE USZU</div>
+        </a>
 
-        <div class="box">
-            WIZYTA ADAPTACYJNA ZE SZCZENIACZKIEM
-        </div>
+        <a href="#modal-five" class="show-modal">
+            <div class="box">WIZYTA ADAPTACYJNA ZE SZCZENIACZKIEM</div>
+        </a>
 
-        <div class="box">
-            PRZYCINANIE PAZURKÓW
-        </div>
+        <a href="#modal-six" class="show-modal">
+            <div class="box">PRZYCINANIE PAZURKÓW</div>
+        </a>
 
-        <div class="box">
-            STRZYŻENIE WETERYJNARYJNE
-        </div>
+        <a href="#modal-seven" class="show-modal">
+            <div class="box">STRZYŻENIE WETERYJNARYJNE</div>
+        </a>
 
-        <div class="box">
-            WYCZESANIE KOCURKA
-        </div>
+        <a href="#modal-eight" class="show-modal">
+            <div class="box">WYCZESANIE KOCURKA</div>
+        </a>
 
-        <div class="box">
-            PRZYWIEZIENIE I ODWIEZIENIE PUPILA
+        <a href="#modal-nine" class="show-modal">
+            <div class="box">PRZYWIEZIENIE I ODWIEZIENIE PUPILA</div>
+        </a>
+
+
+        <div class="overlay" id="modal-overlay">
+            <div class="modal" id="modal-one">
+                <a href="#" class="close">x</a>
+                <header>KĄPIEL OCZYSZCZAJĄCA PIELĘGNACYJNA I LECZNICZA</header>
+                <div class="content">
+                    <p>RASY MAŁE 20-40zł </p>
+                    <p>RASY ŚREDNIE 30-50zł</p>
+                    <p>RASY DUŻE 50-100zł</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-two">
+                <a href="#" class="close">x</a>
+                <header>CZESANIE Z WYCZESYWANIEM KOŁTUNKÓW</header>
+                <div class="content">
+                    <p>RASY MAŁE 50 zł/h</p>
+                    <p>RASY ŚREDNIE 50 zł/h</p>
+                    <p>RASY DUŻE 90 zł/h</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-three">
+                <a href="#" class="close">x</a>
+                <header>TRYMOWANIE</header>
+                <div class="content">
+                    <p>WEDŁUG WZORCA RASY LUB NA ŻYCZENIE<br><br> (GODZINA PRACY Z PIESKIEM NIEZALEŻNIE OD WIELKOŚCI I RASY) 70zł</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-four">
+                <a href="#" class="close">x</a>
+                <header>CZYSZCZENIE PIĘLEGNACJE USZU</header>
+                <div class="content">
+                    <p>(GDY NIE MA WIDOCZNEJ INFEKCJI)</p>
+                    <p>10-20 zł</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-five">
+                <a href="#" class="close">x</a>
+                <header>WIZYTA ADAPTACYJNA ZE SZCZENIACZKIEM</header>
+                <div class="content">
+                    <p>od 80 zł</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-six">
+                <a href="#" class="close">x</a>
+                <header>PRZYCINANIE PAZURKÓW</header>
+                <div class="content">
+                    <p>0-20zł</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-seven">
+                <a href="#" class="close">x</a>
+                <header>STRZYŻENIE WETERYJNARYJNE</header>
+                <div class="content">
+                    <p>od 50zł</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-eight">
+                <a href="#" class="close">x</a>
+                <header>WYCZESANIE KOCURKA</header>
+                <div class="content">
+                    <p>od 50zł</p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-nine">
+                <a href="#" class="close">x</a>
+                <header>PRZYWIEZIENIE I ODWIEZIENIE PUPILA</header>
+                <div class="content">
+                    <p>wg. Martina - 20zł</p>
+                </div>
+            </div>
         </div>
 
     </section>
 
-
-
-    <!-- 
-    <section class="cards">
-
-
-        <div class="card">
-            <div class="front">
-                <div class="content">
-                    <div class="image">
-                        <img src="../images/dog1.jpg" alt="dog" />
-                    </div>
-                    <div class="title">
-                        STRZYŻENIE
-                        <div class="author">Marle Di Pawele</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="back">
-                <div class="content">
-                    <div class="title">
-                        STRZYŻENIE PSA
-                    </div>
-                    <div class="sub-title">
-                        Marle Di Pawele
-                    </div>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa fa-user"></i> Sierść to pierwsza rzecz w wyglądzie psa, która zwraca naszą uwagę. Nie tyle umaszczenie, co właśnie czyste, lśniące i zdrowe futro. Kondycja sierści mówi wiele o stanie zdrowia zwierzęcia, a
-                                także pełni ważne funkcje dla całego organizmu.
-                            </li>
-                            <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="front">
-                <div class="content">
-                    <div class="image">
-                        <img src="../images/cat.jpg" alt="cat" />
-                    </div>
-                    <div class="title">
-                        CZESANIE
-                        <div class="author">Marle Di Pawele</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="back">
-                <div class="content">
-                    <div class="title">
-                        CZESANIE
-                    </div>
-                    <div class="sub-title">
-                        Marle Di Pawele
-                    </div>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa fa-user"></i> Czesanie kota pomaga nie tylko zmniejszyć ilość wszechobecnych włosów, ale także przyczynia się do poprawy kondycji sierści. Kiedy pozbywasz się obumarłych włosów, na ich miejsce wyrastają nowe.
-                            </li>
-                            <button class="reservation_btn">ZAREZERWUJ WIZITĘ</button>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="front">
-                <div class="content">
-                    <div class="image">
-                        <img src="../images/dog.jpg" alt="dog" />
-                    </div>
-                    <div class="title">
-                        TRYMOWANIE
-                        <div class="author">Marle Di Pawele</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="back">
-                <div class="content">
-                    <div class="title">
-                        TRYMOWANIE
-                    </div>
-                    <div class="sub-title">
-                        Marle Di Pawele
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-
     <section class="contact" id="contact">
         <div class="information">
             <div class="wrap">
+                <div class="icons">
+                    <a href="https://www.instagram.com/marledipawele/" target="_blank"> <i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/MarlediPawele/" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                </div>
                 <h1>Skontaktuj się z nami!</h1>
                 <div class="adress info">
-                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="text">
                         <p class="title">Nasz adres</p>
-                        <p><br>ul. Gostyńska 14<br>80-178 Gdańsk</p>
+                        <p><br>UL. GOSTYŃSKA 14<br>80-178 GDAŃSK</p>
                     </div>
                 </div>
+
                 <div class="phone info">
-                    <div class="contact-icon"><i class="fas fa-phone-square"></i></div>
                     <div class="text">
                         <p class="title">Telefon</p>
-                        <p><br>501 679 233</p>
+                        <p><a href="tel:+48 501 679 233">TEL.501 679 233</a></p>
                     </div>
                 </div>
+
                 <div class="open info">
-                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
                     <div class="text">
                         <p class="title">Godziny otwarcia</p>
-                        <p><br>Poniedziałek-Piątek: 8.00 - 17:00 <br>Sobota: 8:00 - 16:00 <br> Niedziela 8:00 - 13:00
-                        </p>
+                        <p><br>KIEDY TYLKO ZECHCESZ ! OTWIERAMY SIĘ DLA CIEBIE :)</p>
                     </div>
                 </div>
+
+                <div class="open info">
+                    <div class="text">
+                        <p class="title">PROBLEM Z DOJAZDEM?</p>
+                        <p><br>W OBRĘBIE 10 KM MOGĘ PODJECHAĆ DO PUPILA I PO WYKONANIU USŁUGI PRZYWIEŹĆ.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -238,6 +227,7 @@
         <p>Marle di Pawele<br>© All rights reserved 2020</p>
     </footer>
 
+    <script src="../js/modal.js"></script>
     <script src="../js/map.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGze9diDY5bK334SePptSJmP9pREP8jkE&callback=initMap">
     </script>
